@@ -7,7 +7,7 @@ print(df)
 print("================================")
 # 设置ID为索引
 df = df.set_index('ID')
-df.to_excel('D:/课/数据分析表/ouput.xlsx')
+df.to_excel('D:/课/数据分析表/ouput5.xlsx')
 # 打印数据
 print(df)
 print("完成")
