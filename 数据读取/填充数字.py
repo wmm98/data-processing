@@ -15,7 +15,7 @@ def add_month(d, md):
     if m != 12:
         yd += m // 12
         m = m % 12
-        return date(d.year + yd, m, d.day)
+    return date(d.year + yd, m, d.day)
 
 
 books = pd.read_excel("D:\课\数据分析表\Books.xlsx", skiprows=3, usecols="C:F",
