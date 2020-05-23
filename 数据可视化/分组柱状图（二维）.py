@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 students = pd.read_excel("D:\课\数据分析表\Students_data.xlsx")
 # 排序数据
 students.sort_values(by=[2016, 2017], inplace=True, ascending=[False, False])
+# print(students)
 # 此plot为DataFrame的plot
 students.plot.bar(x='Field', y=[2016, 2017], color=['orange', 'red', 'blue'])
 plt.title('international Student by Field', fontsize=16, fontweight='bold')
@@ -22,4 +23,4 @@ f = plt.gcf()
 f.subplots_adjust(left=0.2, bottom=0.42)
 plt.tight_layout()
 plt.show()
-# print(students)
+
